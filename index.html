@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            .one{
+                height: 60px;
+                width: 50px;
+                background-color: black;
+            }
+            .two{
+                height: 60px;
+                width: 50px;
+                background-color: blue;
+            }
+            .three{
+                height: 60px;
+                width: 50px;
+                background-color: blueviolet;
+            }
+            .four{
+                height: 60px;
+                width: 50px;
+                background-color: palevioletred;
+            }
+            .five{
+                height: 60px;
+                width: 50px;
+                background-color: yellow;
+            }
+            .six{
+                height: 60px;
+                width: 50px;
+                background-color: green;
+            }
+            .seven{
+                height: 60px;
+                width: 50px;
+                background-color: purple;
+            }
+            .a{
+                display: flex;
+            }
+            .full{
+            
+                
+box-shadow: 2px 2px 2px 5px rgb(169, 166, 166);
+width: 25%;
+height: 40%;
+border-radius: 10px;
+margin-left: 35%;
+margin-top: 60px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left:10%;
+
+            }
+            button{
+                height: 70px;
+                width:70px;
+                color: black;
+                margin-top: 30px;
+                text-align: center;
+                margin-left: 80px;
+            }
+            .f{
+                width: 80px;
+                height: 40px;
+                background-color:wheat;
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 30px;
+                margin-left: 80px;
+            }
+            input{
+                width: 200px;
+                height: 50px;
+            }
+            
+            </style>
+        </head>
+        <body>
+            <div class="full">
+                <div class="f">
+                <p id="d1"></p>
+            </div>
+            <div class="a">
+            <div class="one">
+            </div>
+          <input type="text" id="t1">
+          <p id="d2"></p>
+        </div>
+        <div class="a">
+            <div class="two">
+            </div>
+          <input type="text" id="t2">
+          <p id="d3"></p>
+        </div>
+        <div class="a">
+            <div class="three">
+            </div>
+          <input type="text" id="t3">
+          <p id="d4"></p>
+        </div>
+        <div class="a">
+            <div class="four">
+            </div>
+          <input type="text" id="t4">
+          <p id="d5"></p>
+        </div>
+        <div class="a">
+            <div class="five">
+            </div>
+          <input type="text" id="t5">
+          <p id="d6"></p>
+        </div>
+        <div class="a">
+            <div class="six">
+            </div>
+          <input type="text" id="t6">
+          <p id="d7"></p>
+        </div>
+        <div class="a">
+            <div class="seven">
+            </div>
+          <input type="text" id="t7">
+          <p id="d8"></p>
+        </div>
+      
+        <button onclick="daf()">check</button>
+       </div>
+        <script>
+              x1=0
+             
+function daf(){
+    x1=0
+    x=document.getElementById("t1").value
+    if(x=="black"){
+       x1=x1+1  
+        document.getElementById("d1").innerHTML=x1
+        document.getElementById("d2").innerHTML="correct"
+    }
+    else{
+     
+        document.getElementById("d1").innerHTML=x1
+         document.getElementById("d2").innerHTML="wrong"
+    }
+
+    x=document.getElementById("t2").value
+    if(x=="blue"){
+       x1=x1+1  
+        document.getElementById("d1").innerHTML=x1
+         document.getElementById("d3").innerHTML="correct"
+    }
+    else{
+       
+        document.getElementById("d1").innerHTML=x1
+        document.getElementById("d3").innerHTML="wrong"
+    }
+    x=document.getElementById("t3").value
+    if(x=="blueviolet"){
+       x1=x1+1  
+        document.getElementById("d1").innerHTML=x1
+         document.getElementById("d4").innerHTML="correct"
+    }
+    else{
+        
+        document.getElementById("d1").innerHTML=x1
+        document.getElementById("d4").innerHTML="wrong"
+    }
+    x=document.getElementById("t4").value
+    if(x=="palevioletred"){
+       x1=x1+1  
+        document.getElementById("d1").innerHTML=x1 
+        document.getElementById("d5").innerHTML="correct"
+    }
+    else{
+        
+        document.getElementById("d1").innerHTML=x1
+        document.getElementById("d5").innerHTML="wrong"
+    }
+    x=document.getElementById("t5").value
+    if(x=="yellow"){
+       x1=x1+1  
+        document.getElementById("d1").innerHTML=x1
+         document.getElementById("d6").innerHTML="correct"
+    }
+    else{
+        
+        document.getElementById("d1").innerHTML=x1
+        document.getElementById("d6").innerHTML="wrong"
+    }
+    x=document.getElementById("t6").value
+    if(x=="green"){
+       x1=x1+1  
+        document.getElementById("d1").innerHTML=x1
+         document.getElementById("d7").innerHTML="correct"
+    }
+    else{
+        
+        document.getElementById("d1").innerHTML=x1
+        document.getElementById("d7").innerHTML="wrong"
+    }
+    x=document.getElementById("t7").value
+    if(x=="purple"){
+       x1=x1+1  
+        document.getElementById("d1").innerHTML=x1
+         document.getElementById("d8").innerHTML="correct"
+    }
+    else{
+        
+        document.getElementById("d1").innerHTML=x1
+        document.getElementById("d8").innerHTML="wrong"
+    }
+}
+        </script>
+        </body>
+    </html>
